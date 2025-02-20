@@ -3,6 +3,16 @@ const nameLength = document.querySelector("#name-length");
 const output = document.querySelector("#generator-output");
 const copyNotice = document.querySelector("#copy-notice");
 
+const testimonialText = document.querySelector(".testimonial-ribbon h2");
+const testimonialAuthor = document.querySelector(".testimonial-ribbon p");
+const testimonials = {
+  "- Kim Jong Un": "It's bomb!",
+  "- Mouammar Kadhafi": "Must try again!",
+  "- Pol Pot": "Better than Genocide!",
+  "- Saddam Hussein": "A dictator's dream!",
+  "- Yusef Stalin": "Better than purges!",
+};
+
 const prefixes = [
   "Democratic",
   "People's",
@@ -108,3 +118,13 @@ output.addEventListener("click", () => {
     copyNotice.style.opacity = 0;
   }, 3000);
 });
+
+setInterval(() => {
+  let randomItem =
+    Object.keys(testimonials)[
+      Math.floor(Math.random() * Object.keys(testimonials).length)
+    ];
+
+  testimonialText.textContent = testimonials[randomItem];
+  testimonialAuthor.textContent = randomItem;
+}, 15000);
