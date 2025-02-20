@@ -21,9 +21,12 @@ body {
   background-color: var(--c-bg);
   color: var(--c-text);
   font-size: 1.5rem;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 8px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30vh;
 }
 
 h1 {
@@ -69,7 +72,7 @@ h1 {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 input[type="text"] {
@@ -94,6 +97,7 @@ input[type="range"] {
 
 input:focus {
   outline: none;
+  box-shadow: 0 0 20px var(--c-accent);
 }
 
 .range-container {
@@ -120,4 +124,16 @@ input:focus {
 #generator-output {
   grid-column: 1 / 3;
   font-size: 2rem;
+}
+
+#copy-notice {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: var(--c-gold);
+  transition: 1s ease-in-out opacity;
+  z-index: 9999;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
