@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap");
+
+:root {
+  --c-bg: #1a1a1a;
+  --c-text: #f2e6ce;
+  --c-accent: #cc0000;
+  --c-gold: #ffcc33;
+  --c-blue: #3b6e8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto", monospace;
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-size: 1.5rem;
+  overflow-x: hidden;
+  padding: 8px;
+}
+
+h1 {
+  color: var(--c-accent);
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+}
+
+.testimonial-ribbon {
+  background-color: var(--c-accent);
+  color: var(--c-bg);
+  position: absolute;
+  padding: 0 100px;
+  top: -3.5rem;
+  right: -10rem;
+  transform-origin: top left;
+  transform: rotate(45deg);
+  z-index: 9999;
+}
+
+.testimonial-ribbon h2 {
+  font-family: "Russo One", sans-serif;
+}
+
+.testimonial-ribbon p {
+  font-size: 1rem;
+  text-align: end;
+}
