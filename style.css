@@ -98,6 +98,7 @@ input[type="range"] {
 input:focus {
   outline: none;
   box-shadow: 0 0 20px var(--c-accent);
+  transition: 0.2s ease-in-out box-shadow;
 }
 
 .range-container {
@@ -136,4 +137,33 @@ input:focus {
   z-index: 9999;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonial-ribbon {
+    display: none;
+  }
+  body {
+    padding: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .title-container p {
+    font-size: 1.2rem;
+  }
+  .generator-container {
+    height: 100%;
+  }
+  .generator {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  #generator-output {
+    grid-column: 1;
+  }
+  input {
+    width: 100%;
+  }
 }
