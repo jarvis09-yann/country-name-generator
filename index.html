@@ -22,7 +22,39 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <h1>country name generator</h1>
+    <section class="title-container">
+      <h1>country name generator</h1>
+      <p>Generate a name for your new great country with ease!</p>
+    </section>
+    <div class="generator-container">
+      <div class="generator">
+        <input
+          type="text"
+          name="country"
+          id="country"
+          placeholder="Country Name"
+        />
+        <div class="range-container">
+          <p>1</p>
+          <input
+            type="range"
+            min="1"
+            max="10"
+            step="1"
+            name="Name Length"
+            id="name-length"
+          />
+          <p>10</p>
+        </div>
+        <input
+          type="text"
+          placeholder="Output"
+          readonly
+          name="Output"
+          id="generator-output"
+        />
+      </div>
+    </div>
     <div class="testimonial-ribbon">
       <h2>It's bomb!</h2>
       <p>- Kim Il Sung</p>
