@@ -2,4 +2,4 @@
 
 A name generator for countries.
 
-# LIVE DEPLOYMENT: [HERE](https://converter.jarvis09.com)
+# LIVE DEPLOYMENT: [HERE](https://generator.jarvis09.com)
